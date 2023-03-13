@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "s2t-compare"
+version = "1.0.0"
+description = "Compare Speech to Text APIs"
+authors = ["OhkuboSGMS <sinikake.gokiburi@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "s2t_compare"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+jiwer = "^2.5.1"
+mecab-python = "^1.0.0"
+unidic = "^1.1.0"
+yt-dlp = "^2023.3.4"
+openai = "^0.27.2"
+python-dotenv = "^1.0.0"
+google-cloud-speech = "^2.18.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
